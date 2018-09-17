@@ -4,6 +4,6 @@ object A_Product{
     println(solve(strAry))
     
   }
-  def solve(input: String): String =
-    if(input.split(" ").map(_.toInt).product%2==0){"Even"}else{"Odd"}
+  def solve(input: String): Int =
+    input.split("").map(_.toInt).filter(_==1).size
 }
