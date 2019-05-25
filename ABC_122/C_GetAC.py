@@ -8,6 +8,7 @@ for _ in range(q):
 tmp = [0]
 count = 0
 for i in range(n-1):
+  # Aの隣がCの場合のAを数える
   if s[i:i+2] == 'AC':
     count += 1
     tmp.append(count)
